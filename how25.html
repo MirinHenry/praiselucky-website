@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING MEDIA QUERIES</title>
+    <style>
+        body {
+            background-color: green;
+            background-image: radial-gradient(lightgray, green);
+        }
+        
+        div {
+            width: 300px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        
+        #img1 {
+            width: 300px;
+            height: 300px;
+            border: none;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .div1 {
+            width: 300px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: blue;
+            float: right;
+            margin-top: 30px;
+        }
+        
+        #img2 {
+            width: 300px;
+            height: 300px;
+            border: none;
+        }
+        
+        .div2 {
+            width: 300px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: blue;
+            float: left;
+            margin-top: 30px;
+        }
+        
+        #img3 {
+            width: 300px;
+            height: 300px;
+            border: none;
+        }
+        
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: red;
+                background-image: radial-gradient(lightgray, pink);
+            }
+            div {
+                width: 250px;
+                height: auto;
+            }
+            #img1 {
+                width: 250px;
+                height: auto;
+            }
+            .div1 {
+                width: 250px;
+                height: auto;
+            }
+            #img2 {
+                width: 250px;
+                height: auto;
+            }
+            .div2 {
+                width: 250px;
+                height: auto;
+            }
+            #img3 {
+                width: 250px;
+                height: auto;
+            }
+            p {
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="bonus.jpg" id="img1">
+        <p>yghur rfgrufur frhuyr uhru></p>
+    </div>
+    <div class="div1">
+        <img src="henry.jpg" id="img2">
+        <p>yghur rfgrufur frhuyr uhru></p>
+    </div>
+    <div class="div2">
+        <img src="kile.jpg" id="img3">
+        <p>yghur rfgrufur frhuyr uhru></p>
+    </div>
+</body>
+
+</html>
